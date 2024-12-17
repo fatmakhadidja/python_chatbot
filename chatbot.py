@@ -68,4 +68,4 @@ def chatbot():
             print("Bot: Goodbye!")
             break
 
-chatbot()
+chatbot() # calling the chatbot function
