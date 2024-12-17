@@ -1,6 +1,17 @@
 import json
 import os
 from fuzzywuzzy import process
+import random
+
+jokes = [ 
+    "Why did the developer go broke? Because he used up all his cache.",
+    "Why do programmers prefer dark mode? Because light attracts bugs!",
+    "Why did the scarecrow win an award? Because he was outstanding in his field.",
+    "Why did the developer go broke? Because he used up all his cache.",
+    "What did the ocean say to the beach? Nothing, it just waved.",
+    "Why don't skeletons fight each other? They don't have the guts!"
+]
+
 
 # Define the default responses
 default_responses = {
@@ -14,7 +25,6 @@ default_responses = {
     "goodbye": "Farewell! It was nice chatting with you.",
     "what is your name?": "I'm Chatbot, your virtual assistant.",
     "how can you help me?": "I can answer questions, have conversations, and more!",
-    "tell me a joke": "Why don't skeletons fight each other? They don't have the guts!",
     "tell me a story": "Once upon a time, there was a chatbot who loved to chat all day long!",
     "what is the weather like?": "I’m not sure about the weather, but it’s always sunny in chatbot land!",
     "what is your favorite color?": "I like all colors, but if I had to pick, maybe blue? It’s calming!",
@@ -52,10 +62,13 @@ def chatbot():
         user_input = input("You: ").lower()  # Take user input and convert it to lowercase
         
         # Find the best match to the user's input using fuzzywuzzy
-        best_match = process.extractOne(user_input, responses.keys())
-
-        if best_match[1] >= 80:  # The threshold for similarity, adjust as needed
-            print(f"Bot: {responses[best_match[0]]}")
+        best_match = process.extractOne(user_input, responses.keys())  #best_match = [closest matching string,the similarity score (out of 100)]
+       
+        if best_match[1] >= 90:  # The threshold for similarity, adjust as needed
+            if (responses[best_match[0]]=="RANDOM JOKE") :
+                print(f"Bot: {random.choice(jokes)}")
+            else :    
+                print(f"Bot: {responses[best_match[0]]}")
         else:
             print(f"Bot: {responses['default']}")
             # If the bot doesn't know the response, ask the user and store it
