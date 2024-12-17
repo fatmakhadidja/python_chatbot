@@ -1,29 +1,6 @@
 import json
 import os
 
-# Define the default responses
-default_responses = {
-    "hello": "Hi there! How can I help you?",
-    "hi": "Hello! How can I assist you today?",
-    "hey": "Hey there! What can I do for you?",
-    "how are you?": "I'm doing great, thank you for asking!",
-    "how's it going?": "I'm good, thanks! How about you?",
-    "what's up?": "Not much, just here to chat! How about you?",
-    "bye": "Goodbye! Have a great day!",
-    "goodbye": "Farewell! It was nice chatting with you.",
-    "what is your name?": "I'm Chatbot, your virtual assistant.",
-    "how can you help me?": "I can answer questions, have conversations, and more!",
-    "tell me a joke": "Why don't skeletons fight each other? They don't have the guts!",
-    "tell me a story": "Once upon a time, there was a chatbot who loved to chat all day long!",
-    "what is the weather like?": "I’m not sure about the weather, but it’s always sunny in chatbot land!",
-    "what is your favorite color?": "I like all colors, but if I had to pick, maybe blue? It’s calming!",
-    "do you know programming?": "Yes, I know Python, Java, and many other languages!",
-    "who created you?": "I was created by a team of awesome developers!",
-    "what can you do?": "I can chat with you, tell jokes, and even learn new things from our conversation!",
-    "how old are you?": "I don't have an age like humans, but I’m always learning new things!",
-    "are you a robot?": "I’m a chatbot, not exactly a robot, but I can still help you with all sorts of things.",
-    "default": "I'm not sure how to respond to that."
-}
 
 # File path for saving responses
 response_file = "responses.json"
