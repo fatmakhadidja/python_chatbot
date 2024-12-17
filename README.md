@@ -34,17 +34,9 @@ py chatbot.py
 ```
 
 # Example Interaction
-Hello, I'm your chatbot. Type 'bye' to exit.<br>
-You: hello<br>
-Bot: Hi there! How can I help you?<br>
-You: what's your favorite color?<br>
-Bot: I like all colors, but if I had to pick, maybe blue? It’s calming!<br>
-You: what is your favorite animal?<br>
-Bot: I'm not sure how to respond to that.<br>
-I don't know that yet. Can you tell me what to say? tiger<br>
-Bot: Thanks! I'll remember that next time.<br>
-You: bye<br>
-Bot: Goodbye!<br>
+
+![image](https://github.com/user-attachments/assets/375509ff-b942-4313-b764-cc3b850414cb)
+
 
 ## Saving Responses
 The bot saves new responses in the responses.json file.<br>
