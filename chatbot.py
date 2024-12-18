@@ -14,7 +14,7 @@ jokes = [
 # File path for saving responses
 response_file = "responses.json"
 
-# Function to load responses from a file, or use default if file doesn't exist
+# Function to load responses from a file
 def load_responses():
         with open(response_file, "r") as file:
             return json.load(file)
