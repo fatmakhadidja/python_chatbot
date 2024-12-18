@@ -26,7 +26,7 @@ def save_responses(responses):
         json.dump(responses, file, indent=4)
 
 def chatbot():
-    # Load responses from file (or use defaults if the file doesn't exist)
+    # Load responses from file 
     responses = load_responses()
 
     print("Hello, I'm your chatbot. Type 'bye' to exit.")
@@ -50,7 +50,7 @@ def chatbot():
             print(f"Bot: Thanks! I'll remember that next time.")
             save_responses(responses)  # Save the updated responses to the file
 
-        if user_input == "bye":
+        if user_input == "bye" or "see you later" or "goodbye" or "see ya":
             print("Bot: Goodbye!")
             break
 
