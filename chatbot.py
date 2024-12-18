@@ -14,7 +14,7 @@ jokes = [
 # File path for saving responses
 response_file = "responses.json"
 
-# Function to load responses from a file
+# Function to load responses from a file, or use default if file doesn't exist
 def load_responses():
         with open(response_file, "r") as file:
             return json.load(file)
@@ -50,7 +50,7 @@ def chatbot():
             print(f"Bot: Thanks! I'll remember that next time.")
             save_responses(responses)  # Save the updated responses to the file
 
-        if user_input == "bye" or "see you later" or "goodbye" or "see ya":
+        if user_input == "bye" :
             print("Bot: Goodbye!")
             break
 
