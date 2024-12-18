@@ -1,6 +1,6 @@
 # Chatbot Project
 
-A simple Python-based chatbot that can engage in conversation, learn new responses from users, and remember them across sessions.
+A simple Python-based chatbot that can engage in conversation, learn new responses from users, and remember them across sessions (still under developpement)
 
 ## Features
 
