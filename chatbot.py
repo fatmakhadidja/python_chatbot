@@ -68,7 +68,7 @@ def chatbot():
             if (responses[best_match[0]]=="RANDOM JOKE") :
                 print(f"Bot: {random.choice(jokes)}")
             else :    
-                print(f"Bot: {responses[best_match[0]]}")
+                 print(f"Bot: {responses[best_match[0]]}")
         else:
             print(f"Bot: {responses['default']}")
             # If the bot doesn't know the response, ask the user and store it
