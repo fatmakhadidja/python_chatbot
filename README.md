@@ -38,7 +38,7 @@ py chatbot.py
 ![image](https://github.com/user-attachments/assets/375509ff-b942-4313-b764-cc3b850414cb)
 
 
-## Saving Responses
+# Saving Responses
 The bot saves new responses in the responses.json file.<br>
 If the bot doesn't know how to respond to a question, it will ask the user for an answer and store it in the file for future use.<br>
 
